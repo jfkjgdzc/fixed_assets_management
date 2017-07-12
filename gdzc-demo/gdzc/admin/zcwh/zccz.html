@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>zcwx</title>
+<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+<link href=" ../../../css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src=" ../../../js/jquery.js"></script>
+<script type="text/javascript" src=" ../../../js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src=" ../../../js/select-ui.min.js"></script>
+<script type="text/javascript" src=" ../../../editor/kindeditor.js"></script>
+
+
+
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+
+
+</head>
+
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">首页</a></li>
+    <li><a href="#">资产管理</a></li>
+    <li><a href="zccz.html">资产处置</a></li>
+    </ul>
+    </div>
+    
+    <div class="rightinfo">
+    
+    <div class="tools">
+    
+    	<ul class="toolbar">
+    		<li class="active"><span><img src="../../../images/t01.png" /><cite></cite>
+						<a href="tjcz.html" target="rightFrame"></span>添加</a><i></i></li>
+        <li class="click"><span><img src="../../../images/t02.png" /></span>修改</li>
+        <li><span><img src="../../../images/t03.png" /></span>删除</li>
+        <li><span><img src="../../../images/tjan.jpg" /></span>提交</li>
+        <li><span><img src="../../../images/t03.png" /></span>异议</li>
+        <li><span><img src="../../../images/dytp.png" /></span>打印单据</li>
+        </ul>
+        
+        
+        <ul class="toolbar1">
+        <li><span><img src="../../../images/t05.png" /></span>设置</li>
+        </ul>
+    
+        </div>
+      </ul>
+        <ul class="seachform">
+    
+    <li><label>条码查询</label><input name="" type="text" class="scinput" /></li>
+        <li><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></li>
+
+    <li><label>处理人查询</label><input name="" type="text" class="scinput" /></li>
+     <li><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></li>
+     <li><label>业务日期</label><input name="" type="text" class="scinput" /></li>
+      <li><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></li>
+    <li><label>状态</label>  
+    <div class="vocation">
+    <select class="select3">
+    <option>确认</option>
+    <option>提交</option>
+    <option>异议</option>
+    </select>
+    </div>
+    </li>
+    
+    <li><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></li>
+
+    <li><label>&nbsp;</label><input name="" type="button" class="scbtn" value="查询"/></li>
+    
+    </ul>
+        
+        
+    </div>
+    
+    
+    <table class="tablelist">
+    	<thead>
+    	<tr>
+        <th width="4%"><input name="" type="checkbox" value="" checked="checked"/></th>
+        <th width="10%">资产条码<i class="sort"><img src="../../../images/px.gif" /></i></th>
+        <th width="10%">业务日期</th>
+        <th width="10%">处理人</th>
+        <th width="10%">处置花费</th>
+        <th width="36%">处置内容</th>
+        <th width="10%">状态</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td><input name="" type="checkbox" value="" /></td>
+        <td>20130908</td>
+        <td>20111</td>
+        <td>admin</td>
+        <td>100</td>
+        <td>等你撒看你的了扣三分李娜输了呢你看了你发那少年你发</td>
+        <td>已审核</td>
+        </tr> 
+        
+            
+        </tbody>
+    </table>
+    
+   
+    <div class="pagin">
+    	<div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
+        <ul class="paginList">
+        <li class="paginItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
+        <li class="paginItem"><a href="javascript:;">1</a></li>
+        <li class="paginItem current"><a href="javascript:;">2</a></li>
+        <li class="paginItem"><a href="javascript:;">3</a></li>
+        <li class="paginItem"><a href="javascript:;">4</a></li>
+        <li class="paginItem"><a href="javascript:;">5</a></li>
+        <li class="paginItem more"><a href="javascript:;">...</a></li>
+        <li class="paginItem"><a href="javascript:;">10</a></li>
+        <li class="paginItem"><a href="javascript:;"><span class="pagenxt"></span></a></li>
+        </ul>
+    </div>
+    
+    
+    <div class="tip">
+    	<div class="tiptop"><span>提示信息</span><a></a></div>
+        
+      <div class="tipinfo">
+        <span><img src="../../../images/ticon.png" /></span>
+        <div class="tipright">
+        <p>是否确认对信息的修改 ？</p>
+        <cite>如果是请点击确定按钮 ，否则请点取消。</cite>
+        </div>
+        </div>
+        
+        <div class="tipbtn">
+        <input name="" type="button"  class="sure" value="确定" />&nbsp;
+        <input name="" type="button"  class="cancel" value="取消" />
+        </div>
+    
+    </div>
+    
+    
+    
+    
+    </div>
+    
+    <script type="text/javascript">
+	$('.tablelist tbody tr:odd').addClass('odd');
+	</script>
+</body>
+</html>
