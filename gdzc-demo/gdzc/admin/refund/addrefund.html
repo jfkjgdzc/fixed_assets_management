@@ -9,23 +9,54 @@
 	<div class="place">
     	<span>位置：</span>
     	<ul class="placeul">
-    		<li><a href="#">首页</a></li>
-    		<li><a href="#">资产管理</a></li>
-    		<li><a href="#">资产退库</a></li>
-    		<li><a href="#">退库申请</a></li>
+    		<li><a href="../index.html">首页</a></li>
+    		<li>资产管理</li>
+    		<li>资产退库</li>
+    		<li>退库申请</li>
     	</ul>
-   	</div>    	
-   	<input src="main.html" target="rightFrame" name="" type="button" class="btn" value="返回"/>
-    <div class="formbody">    
-    	<div class="formtitle"><span>退库信息</span></div>    
+   	</div> 
+    <div class="formbody">   	
+   	<input onclick="location.href='refund.html'"  name="" type="button" class="chaxunbutton" value="返回"/>
+   	<input onclick="location.href='refund.html'" name="" type="button" class="chaxunbutton" value="确认保存"/>
+   	<br />  
+    	<div class="formtitle"><span>退库基本信息</span></div>    	
     	<ul class="forminfo">
-    		<li><label>退库人</label><input placeholder="请输入你的姓名" name="" type="text" class="dfinput" /><i></i></li>
-    		<li><label>领用时间</label><input placeholder="请输入领用时间" name="" type="text" class="dfinput" /><i></i></li>
-    		<li><label>退库时间</label><input placeholder="请输入退库时间" name="" type="text" class="dfinput" /><i></i></li>
-    		<li><label>金额</label><input placeholder="请输入金额" name="" type="text" class="dfinput" value="" /></li>
-    		<li><label>备注</label><textarea placeholder="请输入备注信息" name="" cols="" rows="" class="textinput"></textarea></li>
-    		<li><label>&nbsp;</label><input name="" type="button" class="btn" value="确认保存"/></li>
-    	</ul>    
+    		<li>退库人&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input placeholder="请输入你的姓名" name="" type="text" class="dfinput" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;退库时间&nbsp;&nbsp;&nbsp;&nbsp;<input placeholder="请输入领用时间" name="" type="text" class="dfinput" /><i></i></li>    		
+    		<li>退库后资产流向&nbsp;&nbsp;<input placeholder="请输入退库时间" name="" type="text" class="dfinput" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;备注&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input placeholder="请输入退库时间" name="" type="text" class="dfinput" /><i></i></li>    		
+    	</ul>     
+    	<div class="formtitle"><span>退库资产信息</span></div> 
+    	<table class="tablelist">
+    		<thead>
+    			<tr>
+        			<th><input name="" type="checkbox" value="" checked="checked"/>全选</th>
+        			<th>资产编码</th>
+        			<th>资产类别</th>
+        			<th>资产名称</th>
+        			<th>资产型号</th>
+        			<th>价值</th>
+        			<th>使用公司</th>
+        			<th>使用部门</th>
+        			<th>使用人</th>
+        			<th>所属公司</th>
+        			<th>存放地点</th>        		
+        		</tr>
+        	</thead>
+        	<tbody>
+        		<tr>
+        			<td><input name="" type="checkbox" value="" /></td>
+        			<td>20130908</td>
+        			<td>2013-09-09 15:05</td>
+        			<td>张三</td>
+        			<td>12345</td>
+        			<td>已保存</td>
+        			<td>2013-09-09 15:05</td>
+        			<td><a href="#" class="tablelink">查看</a> </td>
+        			<td>张三</td>
+        			<td>12345</td>
+        			<td>已保存</td>
+        		</tr>         	
+        	</tbody>
+    	</table> 
     </div>
 </body>
 </html>
