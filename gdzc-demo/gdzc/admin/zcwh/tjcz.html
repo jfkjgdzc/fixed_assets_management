@@ -1,39 +1,19 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
-<link href=" ../../../css/style.css" rel="stylesheet" type="text/css" />
-<link href=" ../../../css/select.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src=" ../../../js/jquery.js"></script>
-<script type="text/javascript" src=" ../../../js/jquery.idTabs.min.js"></script>
-<script type="text/javascript" src=" ../../../js/select-ui.min.js"></script>
-<script type="text/javascript" src=" ../../../editor/kindeditor.js"></script>
-
-<script type="text/javascript">
-    KE.show({
-        id : 'content7',
-        cssPath : './index.css'
-    });
-  </script>
-  
-<script type="text/javascript">
-$(document).ready(function(e) {
-    $(".select1").uedSelect({
-		width : 345			  
-	});
-	$(".select2").uedSelect({
-		width : 167  
-	});
-	$(".select3").uedSelect({
-		width : 100
-	});
-});
-</script>
-</head>
-
-<body>
-
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="tjcz.css" rel="stylesheet" type="text/css" />
+		<script language="javascript">
+ function ale()
+ {//这个基本没有什么说的，就是弹出一个提醒的对话框
+     alert("保存成功");
+ }
+ </script>
+       
+	</head>
+	
+</html>
 	<div class="place">
     <span>位置：</span>
     <ul class="placeul">
@@ -42,56 +22,94 @@ $(document).ready(function(e) {
     <li><a href="#">资产维修</a></li>
     <li><a href="#">添加</a></li>
     </ul>
-    </div>
-    
-      <li><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></li>                                                     
-    
-    <ul class="forminfo">
-    <li><label>资产条码<b>*</b></label><input name="" type="number" class="dfinput" value=""  style="width:342px;"/></li>
-    <li><label>业务日期<b>*</b></label><input name="" type="date" class="dfinput"   value="" style="width:342px;"/></li>
-    <li><label>处理人<b>*</b></label><input name="" type="text" class="dfinput" value=""  style="width:342px;"/></li>
-    <li><label>维修花费<b>*</b></label><input name="" type="text" class="dfinput" value=""  style="width:342px;"/></li>
-
-    
-    
-    
-    </li>
-    <li><label>处置内容<b>*</b></label>
-    
-
-    <textarea id="content7" name="content" style="width:700px;height:250px;visibility:hidden;"></textarea>
-    
-    </li>
-    <li><label>&nbsp;</label><input name="" type="button" class="btn" value="保存"/></li>
-    </ul>
-    
-    </div> 
-    
-    
-  	
-        </tbody>
+   </div>
+	<table width="1224" height="162" border="1" cellpadding="0" cellspacing="0" style="border-collapse:collapse" bordercolor="#00a4ac">
+      <tr>
+        <td width="190">处置单号:</td>
+        <td width="408"><input type="text" style="width:80%;height:40%;border: hidden;"/>&nbsp;</td>
+        <td width="122">业务日期:</td>
+        <td width="476"><input type="text" style="width:80%;height:40%;border: hidden;"/>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>处理人:</td>
+        <td>&nbsp;<input type="text" style="width:80%;height:40%;border: hidden;"/></td>
+        <td>处置开销:</td>
+        <td><input type="text" style="width:80%;height:40%;border: hidden;"/>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>处置内容:</td>
+        <td><input type="text" style="width:80%;height:40%;border: hidden;"&nbsp;/></td>
+        <td>备注:</td>
+        <td><input type="text" style="width:80%;height:40%;border: hidden;"&nbsp;</td>
+      </tr>
     </table>
-    
-   
-  
-    
-    </div>  
-       
-	</div> 
- 
-	<script type="text/javascript"> 
-      $("#usual1 ul").idTabs(); 
-    </script>
-    
-    <script type="text/javascript">
-	$('.tablelist tbody tr:odd').addClass('odd');
-	</script>
-    
-    
-    
-    
-    
-    </div>
+<li><label></label><input name="" type="button" class="btn" value="选择资产" />
+    &nbsp;<label>&nbsp;</label><input name="" type="button" class="btn" value="删除" />&nbsp;
+    <label></label><input name="" type="button" class="btn" value="返回" onclick = "window.location.href = 'zccz.html'"/>&nbsp;<label></label>
+    <input name="" type="button" class="btn" value="保存" onclick ="ale()""/></li><table class="tablelist">
+    	<thead>
+    	<tr>
+        <th width="5%"><input name="" type="checkbox" value="" checked="checked"/></th>
+        <th width="5%">照片<i class="sort"><img src="../../../images/px.gif" /></i></th>
+        <th width=" 5%">资产条码</th>
+        <th width=" 5%">资产名称</th>
+        <th width=" 5%">资产类别</th>
+        <th width=" 5%">规格型号</th>
+        <th width=" 5%">SN号	</th>
+        <th width=" 5%">计量单位</th>
+        <th width=" 5%">金额</th>
+        <th width=" 5%">使用公司</th>
+        <th width=" 5%">使用部门</th>
+        <th width=" 5%">使用人</th>
+        <th width=" 5%">区域</th>
+        <th width=" 5%">存放地点</th>
+        <th width=" 5%">所属公司</th>
+        <th width=" 5%">购入时间</th>
+        <th width=" 5%">供应商</th>
+        <th width=" 5%">试用期限</th>
+        </tr>
+        <tr>
+         </thead>
+        <tbody>
+        <tr>
+        <td><input name="" type="checkbox" value="" /></td>
+        <td>hjj.jpg</td>
+        <td>233313</td>
+        <td>打不打</td>
+        <td>可以</td>
+        <td>GYNKK</td>
+        <td>4545</td>
+        <td>kg</td>
+        <td>44万元</td>
+        <td>贴近</td>
+        <td>已审核</td>
+        <td>已审核</td>
+        <td>已审核</td>
+        <td>已审核</td>
+        <td>已审核</td>
+        <td>已审核</td>
+        <td>已审核</td>
+        <td>已审核</td>
+             
+       </thead>
 
+    </table>
+    <div class="pagin">
+    	<div class="message">共<i class="blue">0</i>条记录，当前显示第&nbsp;<i class="blue">0&nbsp;</i>页</div>
+        <ul class="paginList">
+        <li class="paginItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
+        <li class="paginItem current"><a href="javascript:;">1</a></li>
+        <!--
+        	<li class="paginItem current"><a href="javascript:;">2</a></li>
+        -->
+        <li class="paginItem"><a href="javascript:;">2</a></li>
+        <li class="paginItem"><a href="javascript:;">3</a></li>
+        <li class="paginItem"><a href="javascript:;">4</a></li>
+        <li class="paginItem"><a href="javascript:;">5</a></li>
+        <li class="paginItem more"><a href="javascript:;">...</a></li>
+        <li class="paginItem"><a href="javascript:;">10</a></li>
+        <li class="paginItem"><a href="javascript:;"><span class="pagenxt"></span></a></li>
+        </ul>
+    </div>
 </body>
 </html>

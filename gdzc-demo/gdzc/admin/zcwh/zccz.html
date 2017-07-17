@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>zcwx</title>
-<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+<link href="tjcz.css" rel="stylesheet" type="text/css" />
 <link href=" ../../../css/select.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src=" ../../../js/jquery.js"></script>
 <script type="text/javascript" src=" ../../../js/jquery.idTabs.min.js"></script>
@@ -55,54 +55,38 @@ $(document).ready(function(e) {
     	<ul class="toolbar">
     		<li class="active"><span><img src="../../../images/t01.png" /><cite></cite>
 						<a href="tjcz.html" target="rightFrame"></span>添加</a><i></i></li>
-        <li class="click"><span><img src="../../../images/t02.png" /></span>修改</li>
         <li><span><img src="../../../images/t03.png" /></span>删除</li>
         <li><span><img src="../../../images/tjan.jpg" /></span>提交</li>
         <li><span><img src="../../../images/t03.png" /></span>异议</li>
         <li><span><img src="../../../images/dytp.png" /></span>打印单据</li>
-        </ul>
-        
-        
-        <ul class="toolbar1">
-        <li><span><img src="../../../images/t05.png" /></span>设置</li>
-        </ul>
-    
-        </div>
-      </ul>
+         </ul>
         <ul class="seachform">
-    
-    <li><label>条码查询</label><input name="" type="text" class="scinput" /></li>
-        <li><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></li>
-
-    <li><label>处理人查询</label><input name="" type="text" class="scinput" /></li>
-     <li><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></li>
-     <li><label>业务日期</label><input name="" type="text" class="scinput" /></li>
-      <li><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></li>
-    <li><label>状态</label>  
-    <div class="vocation">
-    <select class="select3">
-    <option>确认</option>
-    <option>提交</option>
-    <option>异议</option>
-    </select>
-    </div>
-    </li>
-    
-    <li><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></li>
-
-    <li><label>&nbsp;</label><input name="" type="button" class="scbtn" value="查询"/></li>
+        <li><label>文字查询</label><input name="" type="text" class="scinput" /></li>
+        <li><label>状态</label> 
+        <div class="vocation">
+        <select class="select3">
+        <option>确认</option>
+        <option>提交</option>
+        <option>异议</option>
+        </select>
+        </div>
+        </li>
+        <li><label>&nbsp;</label><input name="" type="button" class="scbtn" value="查询"/></li>
     
     </ul>
         
         
     </div>
+        
+        
+
     
     
     <table class="tablelist">
     	<thead>
     	<tr>
         <th width="4%"><input name="" type="checkbox" value="" checked="checked"/></th>
-        <th width="10%">资产条码<i class="sort"><img src="../../../images/px.gif" /></i></th>
+        <th width="10%">处置单号<i class="sort"><img src="../../../images/px.gif" /></i></th>
         <th width="10%">业务日期</th>
         <th width="10%">处理人</th>
         <th width="10%">处置花费</th>
@@ -127,11 +111,14 @@ $(document).ready(function(e) {
     
    
     <div class="pagin">
-    	<div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
+    	<div class="message">共<i class="blue">0</i>条记录，当前显示第&nbsp;<i class="blue">0&nbsp;</i>页</div>
         <ul class="paginList">
         <li class="paginItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
-        <li class="paginItem"><a href="javascript:;">1</a></li>
-        <li class="paginItem current"><a href="javascript:;">2</a></li>
+        <li class="paginItem current"><a href="javascript:;">1</a></li>
+        <!--
+        	<li class="paginItem current"><a href="javascript:;">2</a></li>
+        -->
+        <li class="paginItem"><a href="javascript:;">2</a></li>
         <li class="paginItem"><a href="javascript:;">3</a></li>
         <li class="paginItem"><a href="javascript:;">4</a></li>
         <li class="paginItem"><a href="javascript:;">5</a></li>
@@ -140,7 +127,6 @@ $(document).ready(function(e) {
         <li class="paginItem"><a href="javascript:;"><span class="pagenxt"></span></a></li>
         </ul>
     </div>
-    
     
     <div class="tip">
     	<div class="tiptop"><span>提示信息</span><a></a></div>
