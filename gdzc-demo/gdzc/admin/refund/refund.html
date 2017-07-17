@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<link href="../../../css/style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="../../../js/jquery.js"></script>
+	<script type="text/javascript">
+$(document).ready(function(){
+  $(".shanchu").click(function(){
+  $(".shanchu1").fadeIn(200);
+  });
+  $(".tijiao").click(function(){
+  $(".tijiao1").fadeIn(200);
+  });
+  $(".queren").click(function(){
+  $(".queren1").fadeIn(200);
+  });
+  
+  $(".tiptop1 a").click(function(){
+  $(".shanchu1").fadeOut(200);
+});
+  $(".sure1").click(function(){
+  $(".shanchu1").fadeOut(100);
+});
+  $(".cancel1").click(function(){
+  $(".shanchu1").fadeOut(100);
+});
+  
+  $(".tiptop2 a").click(function(){
+  $(".tijiao1").fadeOut(200);
+});
+  $(".sure2").click(function(){
+  $(".tijiao1").fadeOut(100);
+});
+  $(".cancel2").click(function(){
+  $(".tijiao1").fadeOut(100);
+});
+  
+  $(".tiptop3 a").click(function(){
+  $(".queren1").fadeOut(200);
+});
+  $(".sure3").click(function(){
+  $(".queren1").fadeOut(100);
+});
+  $(".cancel3").click(function(){
+  $(".queren1").fadeOut(100);
+});
+});
+</script>
+	</script>
+</head>
+<body>
+	<div class="place">
+    	<span>位置：</span>
+    	<ul class="placeul">
+    		<li><a href="../index.html">首页</a></li>
+    		<li>资产管理</li>
+    		<li>资产退库</li>
+    	</ul>
+   	</div>    
+    <div class="rightinfo">   
+    	<div class="tools">    
+    		<ul class="toolbar">
+        		<li><a href="addrefund.html"><span><img src="../../../images/action_add.png" /></span>退库申请</a></li>
+        		<li><a href="addrefund.html"><span><img src="../../../images/reply.png" /></span>修改</a></li>
+        		<li class="shanchu"><span><img src="../../../images/action_delete.png" /></span>删除</li>
+        		<li class="tijiao"><span><img src="../../../images/arrow_top.png" /></span>提交</li>    
+        		<li class="queren"><span><img src="../../../images/action_check.png" /></span>确认</li>    
+        	</ul>    
+        </div>
+    </div> 
+    <div>    	
+    		&nbsp;退库单号&nbsp;<input  class="chaxuntext" name="" type="text" value=""/> &nbsp;&nbsp;&nbsp;&nbsp;
+    		退库时间&nbsp;<input class="chaxuntext" name="" type="text" value=""/>~ <input class="chaxuntext" name="" type="text" value=""/>&nbsp;&nbsp;&nbsp;&nbsp; 
+    		退库人&nbsp;<input class="chaxuntext" name="" type="text" value=""/> &nbsp;&nbsp;&nbsp;&nbsp;
+    		状态&nbsp;
+    		<select class="chaxunxiala" name="">
+    			<option value="">全部</option>
+    			<option value="">未确认</option>
+    			<option value="">已确认</option>
+    		</select>&nbsp;&nbsp;&nbsp;&nbsp;
+    		<input class="chaxunbutton" name="" type="button" value="查询"/> 
+    </div>
+    <br />
+    <table class="tablelist">
+    	<thead>
+    		<tr>
+        		<th><input name="" type="checkbox" value="" checked="checked"/>全选</th>
+        		<th>退库单号</th>
+        		<th>退库时间</th>
+        		<th>退库人</th>
+        		<th>退库后资产流向</th>
+        		<th>状态</th>
+        		<th>备注</th>
+        		<th>退库资产数目</th>
+        		<th>退库资产详情</th>
+        	</tr>
+        </thead>
+        <tbody>
+        	<tr>
+        		<td><input name="" type="checkbox" value="" /></td>
+        		<td>20130908</td>
+        		<td>2013-09-09 15:05</td>
+        		<td>张三</td>
+        		<td>12345</td>
+        		<td>已保存</td>
+        		<td>2</td>
+        		<td>2013-09-09 15:05</td>
+        		<td><a href="refunddetial.html" class="tablelink">查看</a> </td>
+        	</tr> 
+        	<tr>
+        		<td><input name="" type="checkbox" value="" /></td>
+        		<td>20130908</td>
+        		<td>2013-09-09 15:05</td>
+        		<td>张三</td>
+        		<td>12345</td>
+        		<td>已提交 </td>
+        		<td>2</td>
+        		<td>2013-09-09 15:05</td>
+        		<td><a href="refunddetial.html" class="tablelink">查看</a> </td>
+        	</tr>  
+        	<tr>
+        		<td><input name="" type="checkbox" value="" /></td>
+        		<td>20130908</td>
+        		<td>2013-09-09 15:05</td>
+        		<td>张三</td>
+        		<td>12345</td>
+        		<td>已确认</td>
+        		<td>2</td>
+        		<td>2013-09-09 15:05</td>
+        		<td><a href="refunddetial.html" class="tablelink">查看</a> </td>
+        	</tr>  
+        </tbody>
+    </table> 
+    <div class="pagin">
+    	<div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
+        <ul class="paginList">
+        	<li class="paginItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
+        	<li class="paginItem"><a href="javascript:;">1</a></li>
+        	<li class="paginItem current"><a href="javascript:;">2</a></li>
+        	<li class="paginItem"><a href="javascript:;">3</a></li>
+        	<li class="paginItem"><a href="javascript:;">4</a></li>
+        	<li class="paginItem"><a href="javascript:;">5</a></li>
+        	<li class="paginItem more"><a href="javascript:;">...</a></li>
+        	<li class="paginItem"><a href="javascript:;">10</a></li>
+        	<li class="paginItem"><a href="javascript:;"><span class="pagenxt"></span></a></li>
+        </ul>
+    </div>
+    <div class="shanchu1">
+    	<div class="tiptop1"><span>提示信息</span><a></a></div>       
+      	<div class="tipinfo">
+        	<span><img src="../../../images/ticon.png" /></span>
+        	<div class="tipright">
+        		<p>是否删除 ？</p>
+        		<cite>如果是请点击确定按钮 ，否则请点取消。</cite>
+        	</div>
+       	</div>        
+        <div class="tipbtn">
+        	<input name="" type="button"  class="sure1" value="确定" />&nbsp;
+        	<input name="" type="button"  class="cancel1" value="取消" />
+        </div>    
+    </div>
+    <div class="tijiao1">
+    	<div class="tiptop2"><span>提示信息</span><a></a></div>       
+      	<div class="tipinfo">
+        	<span><img src="../../../images/ticon.png" /></span>
+        	<div class="tipright">
+        		<p>是否提交对信息的修改 ？</p>
+        		<cite>如果是请点击确定按钮 ，否则请点取消。</cite>
+        	</div>
+       	</div>        
+        <div class="tipbtn">
+        	<input name="" type="button"  class="sure2" value="确定" />&nbsp;
+        	<input name="" type="button"  class="cancel2" value="取消" />
+        </div>    
+    </div>
+    <div class="queren1">
+    	<div class="tiptop3"><span>提示信息</span><a></a></div>       
+      	<div class="tipinfo">
+        	<span><img src="../../../images/ticon.png" /></span>
+        	<div class="tipright">
+        		<p>是否确认对信息的修改 ？</p>
+        		<cite>如果是请点击确定按钮 ，否则请点取消。</cite>
+        	</div>
+       	</div>        
+        <div class="tipbtn">
+        	<input name="" type="button"  class="sure3" value="确定" />&nbsp;
+        	<input name="" type="button"  class="cancel3" value="取消" />
+        </div>    
+    </div>
+    <script type="text/javascript">
+	$('.tablelist tbody tr:odd').addClass('odd');
+	</script>
+</body>
+</html>
