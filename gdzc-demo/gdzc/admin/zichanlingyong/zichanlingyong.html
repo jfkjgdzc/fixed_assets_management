@@ -12,7 +12,7 @@
 					$(".tip").fadeIn(200);
 				});
 				$(".addclick").click(function() {
-					location.href="zichanlingyong_add.html";
+					location.href = "zichanlingyong_add.html";
 				});
 				$(".tiptop a").click(function() {
 					$(".tip").fadeOut(200);
@@ -67,28 +67,37 @@
 			<div class="tools">
 
 				<ul class="toolbar">
-					<li class="addclick"><span><img src="../../../images/t01.png" /></span>添加</li>
-					<li class="click"><span><img src="../../../images/t02.png" /></span>修改</li>
-					<li class="click"><span><img src="../../../images/t03.png" /></span>删除</li>
-					<li id="click"><span><img src="../../../images/t01.png" /></span>提交</li>
-					<li id="click"><span><img src="../../../images/t01.png" /></span>同意</li>
+					<li class="addclick"><span><img src="../../../images/action_add.png" /></span>添加</li>
+					<li class="click"><span><img src="../../../images/reply.png" /></span>修改</li>
+					<li class="click"><span><img src="../../../images/action_delete.png" /></span>删除</li>
+					<li id="click"><span><img src="../../../images/arrow_top.png" /></span>提交</li>
+					<li id="click"><span><img src="../../../images/action_check.png" /></span>同意</li>
 					<li><span><img src="../../../images/t03.png" /></span>不同意</li>
 					<!--	<li><span><img src="../../images/t04.png" /></span>统计</li>-->
 				</ul>
-
-				<!--<ul class="toolbar1">
-					<li><span><img src="../../images/t05.png" /></span>设置</li>
-				</ul>-->
 			</div>
+			<div>
+				&nbsp;领用单号&nbsp;<input class="chaxuntext" name="" type="text" value="" /> 
+				领用时间&nbsp;<input class="chaxuntext" name="" type="text" value="" />~<input class="chaxuntext" name="" type="text" value="" />
+				领用人&nbsp;<input class="chaxuntext" name="" type="text" value="" />
+				状态&nbsp;
+				<select class="chaxunxiala" name="">
+					<option value="">全部</option>
+					<option value="">未确认</option>
+					<option value="">已确认</option>
+				</select>&nbsp;&nbsp;&nbsp;&nbsp;
+				<input class="chaxunbutton" name="" type="button" value="查询" /> 
+			</div>
+			<br />
 			<table class="tablelist">
 				<thead>
 					<tr>
 						<th><input name="" type="checkbox" value="" onclick="swapCheck()" /></th>
-						<th>编号</th>
-						<th>标题</th>
-						<th>用户</th>
-						<th>籍贯</th>
-						<th>发布时间</th>
+						<th>领用单号</th>
+						<th>领用时间</th>
+						<th>领用人</th>
+						<th>领用后使用部门</th>
+						<th>资产</th>
 						<th>是否审核</th>
 						<th>操作</th>
 					</tr>
