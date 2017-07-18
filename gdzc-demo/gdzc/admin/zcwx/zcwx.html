@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>zcwx</title>
-<link href="tjcz.css" rel="stylesheet" type="text/css" />
+<link href="../zccz/tjcz.css" rel="stylesheet" type="text/css" />
 <link href=" ../../../css/select.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src=" ../../../js/jquery.js"></script>
 <script type="text/javascript" src=" ../../../js/jquery.idTabs.min.js"></script>
@@ -48,21 +48,22 @@ $(document).ready(function(e) {
     </ul>
     </div>
     
-    <div class="rightinfo">
-    
-    <div class="tools">
-    
-    	<ul class="toolbar">
-    		<li class="active"><span><img src="../../../images/t01.png" /><cite></cite>
-						<a href="tjwx.html" target="rightFrame"></span>添加</a><i></i></li>
-        <li><span><img src="../../../images/t03.png" /></span>删除</li>
-        <li><span><img src="../../../images/tjan.jpg" /></span>提交</li>
-        <li><span><img src="../../../images/t03.png" /></span>异议</li>
-        <li><span><img src="../../../images/dytp.png" /></span>打印单据</li>
-      </ul>
+   <div class="rightinfo">   
+    	<div class="tools">    
+    		<ul class="toolbar">
+        		<li><a href="tjwx.html"><span><img src="../../../images/action_add.png" /></span>维修申请</a></li>
+        		<li><a href="tjwx.html"><span><img src="../../../images/reply.png" /></span>修改</a></li>
+        		<li class="shanchu"><span><img src="../../../images/action_delete.png" /></span>删除</li>
+        		<li class="tijiao"><span><img src="../../../images/arrow_top.png" /></span>提交</li>    
+        		<li class="queren"><span><img src="../../../images/action_check.png" /></span>确认</li>    
+        	</ul>    
+        </div>
+     </ul>
         <ul class="seachform">   
-        <li><label>文字查询</label><input name="" type="text" class="scinput" /></li>
-        <li><label>状态</label>  
+        <li><label>单号查询</label><input name="" type="text" class="scinput" /></li>
+        <li><label>日期查询</label><input name="" type="text" class="scinput" /></li>
+        <li><label>处理人查询</label><input name="" type="text" class="scinput" /></li>
+        <li><label>维修状态</label>  
     <div class="vocation">
     <select class="select3">
     <option>确认</option>
@@ -89,8 +90,9 @@ $(document).ready(function(e) {
         <th width="10%">业务日期</th>
         <th width="10%">处理人</th>
         <th width="10%">维修花费</th>
-        <th width="36%">维修内容</th>
+        <th width="28%">维修内容</th>
         <th width="10%">状态</th>
+       <th width="8%">维修详情</th>
         </tr>
         </thead>
         <tbody>
@@ -102,6 +104,7 @@ $(document).ready(function(e) {
         <td>100</td>
         <td>等你撒看你的了扣三分李娜输了呢你看了你发那少年你发</td>
         <td>已审核</td>
+        <td><a href="wxxq.html" class="tablelink">查看</td>
         </tr> 
         
             
