@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>无标题文档</title>
-<link href="zcwh.css" rel="stylesheet" type="text/css" />
+<link href="../zccz/zcwh.css" rel="stylesheet" type="text/css" />
 <link href=" ../../../css/select.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src=" ../../../js/jquery.js"></script>
 <script type="text/javascript" src=" ../../../js/jquery.idTabs.min.js"></script>
@@ -46,28 +46,47 @@ $(document).ready(function(e) {
     <li><a href="#">资产维修</a></li>
     <li><a href="#">添加</a></li>
     </ul>
+    
     </div>
     
-      <li><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></li>                                                     
+          	<div class="formtitle"><span>维修基本信息</span></div> 
     
     <ul class="forminfo">
-    <td><label>维修单号<b>*</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input name="" type="number" class="dfinput" value=""  style="width:342px;"/><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业务日期<b>*</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input name="" type="number" class="dfinput" value=""  style="width:342px"/></td>
+    <td><label>维修单号<b>*</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input placeholder="请输入维修单号" name="" type="number" class="dfinput" value=""  style="width:342px;"/><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业务日期<b>*</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input placeholder="请输入日期" name="" type="number" class="dfinput" value=""  style="width:342px"/></td>
     <br></br>
-    <td><label>处理人<b>*</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input name="" type="number" class="dfinput" value=""  style="width:342px;"/><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;维修花费<b>*</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input name="" type="number" class="dfinput" value=""  style="width:342px"/></td>
+    <td><label>处理人<b>*</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input placeholder="请输入处理人姓名" name="" type="number" class="dfinput" value=""  style="width:342px;"/><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;维修花费<b>*</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input placeholder="请输入维修花费" name="" type="number" class="dfinput" value=""  style="width:342px"/></td>
+    <br></br>
+    <td><label>维修内容<b>*</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input placeholder="请简述维修内容" name="" type="number" class="dfinput" value=""  style="width:342px;"/><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;备注<b></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input placeholder="其他信息" name="" type="number" class="dfinput" value=""  style="width:342px"/></td>
+
      <br></br>
     
     
     
     </li>
-    <li><label>维修内容<b>*</b></label><textarea name="" cols="" rows="" class="textinput"></textarea></li>
-    <li><label>备注</label><input name="" type="number" class="dfinput" value=""  style="width:800px;"/></li>
-    <li><label></label><input name="" type="button" class="btn" value="选择资产" onclick = "window.location.href = 'tjzc.html'"/>
-    &nbsp;<label>&nbsp;</label><input name="" type="button" class="btn" value="删除" />&nbsp;
-    <label></label><input name="" type="button" class="btn" value="取消" onclick = "window.location.href = 'zcwx.html'"/>&nbsp;<label></label>
-    <input name="" type="button" class="btn" value="保存" onclick ="ale()""/></li>
+   
+   
+   
+ 
     </ul>
     
     </div> 
+     	
+     	<div class="formtitle"><span>维修资产信息</span></div> 
+    <div class=seachform>
+    	<li><label>&nbsp;&nbsp;</label><label>文字查询</label><input name="" type="text" class="scinput" /></li>
+        <li><label>状态</label>  
+    <div class="vocation">
+    <select class="select3">
+    <option>确认</option>
+    <option>提交</option>
+    <option>异议</option>
+    </select>
+    </div>
+    </li>
+    <li><label>&nbsp;</label><input name="" type="button" class="scbtn" value="查询"/></li>
+    <li><label>&nbsp;</label><input name="" type="button" class="scbtn" value="确认" onclick = "window.location.href = 'zcwx.html'"/></li>
+
+    	</div>
     <table class="tablelist">
     	<thead>
     	<tr>

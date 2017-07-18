@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="../zccz/zcwh.css" rel="stylesheet" type="text/css" />
+<link href=" ../../../css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src=" ../../../js/jquery.js"></script>
+<script type="text/javascript" src=" ../../../js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src=" ../../../js/select-ui.min.js"></script>
+<script type="text/javascript" src=" ../../../editor/kindeditor.js"></script>
+
+<script type="text/javascript">
+	function ale()
+ {//这个基本没有什么说的，就是弹出一个提醒的对话框
+     alert("保存成功");
+ }
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">首页</a></li>
+    <li><a href="#">资产管理</a></li>
+    <li><a href="#">资产处置</a></li>
+    <li><a href="#">添加</a></li>
+    </ul>
+    
+    </div>
+    
+          	<div class="formtitle"><span>处置基本信息</span></div> 
+    
+    <ul class="forminfo">
+    <td><label>处置单号<b>*</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input placeholder="请输入处置单号" name="" type="number" class="dfinput" value=""  style="width:342px;"/><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业务日期<b>*</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input placeholder="请输入日期" name="" type="number" class="dfinput" value=""  style="width:342px"/></td>
+    <br></br>
+    <td><label>处理人<b>*</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input placeholder="请输入处置人姓名" name="" type="number" class="dfinput" value=""  style="width:342px;"/><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;处置花费<b>*</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input placeholder="请输入维修花费" name="" type="number" class="dfinput" value=""  style="width:342px"/></td>
+    <br></br>
+    <td><label>处置内容<b>*</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input placeholder="请简述处置内容" name="" type="number" class="dfinput" value=""  style="width:342px;"/><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;备注<b></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input placeholder="其他信息" name="" type="number" class="dfinput" value=""  style="width:342px"/></td>
+
+     <br></br>
+    
+    
+    
+    </li>
+   
+   
+   
+ 
+    </ul>
+    
+    </div> 
+     	
+     	<div class="formtitle"><span>处置资产信息</span></div> 
+    <div class=seachform>
+    	<li><label>&nbsp;&nbsp;</label><label>文字查询</label><input name="" type="text" class="scinput" /></li>
+        <li><label>状态</label>  
+    <div class="vocation">
+    <select class="select3">
+    <option>确认</option>
+    <option>提交</option>
+    <option>异议</option>
+    </select>
+    </div>
+    </li>
+    <li><label>&nbsp;</label><input name="" type="button" class="scbtn" value="查询"/></li>
+    <li><label>&nbsp;</label><input name="" type="button" class="scbtn" value="确认" onclick = "window.location.href = 'zccz.html'"/></li>
+
+    	</div>
+    <table class="tablelist">
+    	<thead>
+    	<tr>
+        <th width="  5%"><input name="" type="checkbox" value="" checked="checked"/></th>
+        <th width="  5%">序号<i class="sort"><img src="../../../images/px.gif" /></i></th>
+        <th width="  10%">照片</th>
+        <th width="  10%">资产条码</th>
+        <th width="  10%">资产名称</th>
+        <th width="  10%">所属公司</th>
+        <th width="  10%">当前所在公司</th>
+        <th width="  10%">当前所有部门</th>
+        <th width="  10%">当前使用人</th>
+		<th width="  10%">存放地址</th>
+        </tr>
+        </thead>
+        <tbody>
+        
+        
+            
+        </tbody>
+    </table>
+    
+    
+    
+  	
+        </tbody>
+    </table>
+    
+   
+  
+    
+    </div>  
+       
+	</div> 
+ 
+	<script type="text/javascript"> 
+      $("#usual1 ul").idTabs(); 
+    </script>
+    
+    <script type="text/javascript">
+	$('.tablelist tbody tr:odd').addClass('odd');
+	</script>
+    
+    
+    
+    
+    
+    </div>
+
+</body>
+</html>
