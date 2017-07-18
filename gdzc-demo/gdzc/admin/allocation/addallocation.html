@@ -17,7 +17,7 @@
    	</div> 
     <div class="formbody">   	
    	<input onclick="location.href='refund.html'"  name="" type="button" class="chaxunbutton" value="返回"/>
-   	<input onclick="location.href='refund.html'" name="" type="button" class="chaxunbutton" value="确认保存"/>
+   	&nbsp;&nbsp;&nbsp;<input onclick="location.href='refund.html'" name="" type="button" class="chaxunbutton" value="保存"/>
    	<br />  
     	<div class="formtitle"><span>调拨基本信息</span></div>    	
     	<ul class="forminfo">
@@ -26,6 +26,21 @@
     		<li>退库后资产流向&nbsp;&nbsp;<input placeholder="请输入退库时间" name="" type="text" class="dfinput" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     	</ul>     
     	<div class="formtitle"><span>调拨资产信息</span></div> 
+    	<div>    	
+    		&nbsp;退库单号&nbsp;<input  class="chaxuntext" name="" type="text" value=""/> &nbsp;&nbsp;&nbsp;&nbsp;
+    		退库时间&nbsp;<input class="chaxuntext" name="" type="text" value=""/>~ <input class="chaxuntext" name="" type="text" value=""/>&nbsp;&nbsp;&nbsp;&nbsp; 
+    		退库人&nbsp;<input class="chaxuntext" name="" type="text" value=""/> &nbsp;&nbsp;&nbsp;&nbsp;
+    		状态&nbsp;
+    		<select class="chaxunxiala" name="">
+    			<option value="">全部</option>
+    			<option value="">已保存</option>
+    			<option value="">已提交</option>
+    			<option value="">已确认</option>
+    			<option value="">驳回</option>    			
+    		</select>&nbsp;&nbsp;&nbsp;&nbsp;
+    		<input class="chaxunbutton" name="" type="button" value="查询"/> 
+    	</div>
+    	<br/>
     	<table class="tablelist">
     		<thead>
     			<tr>
@@ -58,6 +73,20 @@
         		</tr>         	
         	</tbody>
     	</table> 
+    	<div class="pagin">
+    		<div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
+        		<ul class="paginList">
+        		<li class="paginItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
+        		<li class="paginItem"><a href="javascript:;">1</a></li>
+        		<li class="paginItem current"><a href="javascript:;">2</a></li>
+        		<li class="paginItem"><a href="javascript:;">3</a></li>
+        		<li class="paginItem"><a href="javascript:;">4</a></li>
+        		<li class="paginItem"><a href="javascript:;">5</a></li>
+        		<li class="paginItem more"><a href="javascript:;">...</a></li>
+        		<li class="paginItem"><a href="javascript:;">10</a></li>
+        		<li class="paginItem"><a href="javascript:;"><span class="pagenxt"></span></a></li>
+        	</ul>
+    	</div>
     </div>
 </body>
 </html>
