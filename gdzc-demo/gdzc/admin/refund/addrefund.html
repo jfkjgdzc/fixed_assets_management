@@ -20,16 +20,32 @@
    	&nbsp;&nbsp;&nbsp;&nbsp;
    	<input onclick="location.href='refund.html'" name="" type="button" class="chaxunbutton" value="保存"/>
    	<br />
-    	<div class="formtitle"><span>退库基本信息</span></div>    	
-    	<ul class="forminfo">
-    		<li>退库人&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input placeholder="请输入你的姓名" name="" type="text" class="dfinput" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;退库时间&nbsp;&nbsp;&nbsp;&nbsp;<input placeholder="请输入领用时间" name="" type="text" class="dfinput" /><i></i></li>    		
-    		<li>退库后资产流向&nbsp;&nbsp;<input placeholder="请输入退库时间" name="" type="text" class="dfinput" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;备注&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input placeholder="请输入退库时间" name="" type="text" class="dfinput" /><i></i></li>    		
-    	</ul>     
+    	<div class="formtitle"><span>退库基本信息</span></div>  
+    	<table  class="forminfo">
+    		<tr>
+    			<td>退库人</td>
+    			<td><input placeholder="请输入退库人姓名" name="" type="text" class="dfinput" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    			<td>退库时间&nbsp;&nbsp;</td>
+    			<td><input placeholder="请输入退库时间" name="" type="text" class="dfinput" /></td>
+    		</tr>
+    		<tr>
+    			<td>&nbsp;</td>
+    		</tr>
+    		<tr>
+    			<td>退库后资产流向&nbsp;&nbsp;</td>
+    			<td><input placeholder="请输入退库后资产流向" name="" type="text" class="dfinput" /></td>
+    			<td>备注&nbsp;&nbsp;</td>
+    			<td><input placeholder="请输入备注信息" name="" type="text" class="dfinput" /></td>
+    		</tr>
+    		<tr>
+    			<td>&nbsp;</td>
+    		</tr>    		
+    	</table>    	   
     	<div class="formtitle"><span>退库资产信息</span></div> 
     	<div>    	
-    		&nbsp;退库单号&nbsp;<input  class="chaxuntext" name="" type="text" value=""/> &nbsp;&nbsp;&nbsp;&nbsp;
-    		退库时间&nbsp;<input class="chaxuntext" name="" type="text" value=""/>~ <input class="chaxuntext" name="" type="text" value=""/>&nbsp;&nbsp;&nbsp;&nbsp; 
-    		退库人&nbsp;<input class="chaxuntext" name="" type="text" value=""/> &nbsp;&nbsp;&nbsp;&nbsp;
+    		&nbsp;资产编码&nbsp;<input  class="chaxuntext" name="" type="text" value=""/> &nbsp;&nbsp;&nbsp;&nbsp;
+    		资产类别&nbsp;<input class="chaxuntext" name="" type="text" value=""/>&nbsp;&nbsp;&nbsp;&nbsp; 
+    		资产名称&nbsp;<input class="chaxuntext" name="" type="text" value=""/> &nbsp;&nbsp;&nbsp;&nbsp;
     		状态&nbsp;
     		<select class="chaxunxiala" name="">
     			<option value="">全部</option>
@@ -49,12 +65,16 @@
         			<th>资产类别</th>
         			<th>资产名称</th>
         			<th>资产型号</th>
-        			<th>价值</th>
+        			<th>资产价值</th>
         			<th>使用公司</th>
-        			<th>使用部门</th>
-        			<th>使用人</th>
         			<th>所属公司</th>
-        			<th>存放地点</th>        		
+        			<th>存放地点</th>
+        			<th>资产管理员</th>
+        			<th>使用状态</th>   
+        			<th>照片</th>
+        			<th>入库时间</th>
+        			<th>供应商</th>
+        			<th>使用期限</th>
         		</tr>
         	</thead>
         	<tbody>
